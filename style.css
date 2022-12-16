@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Ruh1";
+    src: url(/fonts/FrankRuhlLibre-Regular.ttf);
+}
+@font-face{
+    font-family: "Ruh1 Medium";
+    src: url(/fonts/FrankRuhlLibre-Medium.ttf);
+}
+@font-face{
+    font-family: "vibes";
+    src: url(/fonts/GreatVibes-Regular.ttf);
+}
+html{
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(1.5rem + 1vw);
+    --header3: calc(1rem + 1vw);
+    --header4: calc(2.5rem + 1vw);
+    --background-color:#414141;
+    --special-color:#906272;
+    --gray-text:#525252;
+    --text: calc(1.2rem + 1vw)
+}
+h1{
+    font-size: var(--header1);
+    font-family: "vibes" , sans-serif;
+}
+h2{
+    font-size: var(--header2);
+}
+h3{
+    font-size: var(--header3);
+}
+h4,h5{
+    font-size: var(--header4);
+}
+li,label,input,button,p,a{
+    font-size: var(--text);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    font-family: "Ruh1" , sans-serif;
+    animation: opening 1s ease-in-out;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+}
+.main-head{
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#logo{
+    flex: 1 1 20rem;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+.hero{
+    min-height: 90vh;
+    width: 95%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.hero-introduction{
+    flex: 2 1 40rem;
+    text-align: center;
+}
+.hero-images{
+    flex: 1 1 40rem;
+    position: relative;
+    background: linear-gradient(#dad8dd, #dad1d4);
+    z-index: -1;
+}
+.hero-elena{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.hero-introduction a{
+    border: 1px solid black;
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+}
+.hero-introduction p{
+color: var(--gray-text);
+margin: 1rem;
+padding: 2rem 2rem;
+}
+.hero-introduction h2{
+    padding: 1rem;
+}
+.plant{
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+    z-index: -1;
+    height: 70%;
+    width: 80%;
+}
+.plant2{
+    left: 40%;
+}
+
+/*animation */
+
+
+
+    
